@@ -3,19 +3,87 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -23,25 +91,44 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
 	display: block;
 }
+
 body {
 	line-height: 1;
 }
-ol, ul {
+
+ol,
+ul {
 	list-style: none;
 }
-blockquote, q {
+
+blockquote,
+q {
 	quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -49,18 +136,265 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+html,
+body {
+	height: 100%;
+	font-family: 'Titillium Web', sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: 'Bangers', cursive;
+	letter-spacing: 1px;
+	margin-bottom: 15px;
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+.container {
+	margin: 0 auto;
+	width: 66.5%;
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+	/* border:3px solid red; */
+}
+
+header {
+	background-color: dodgerblue;
+	width: 100%;
+	position: fixed;
+	top: 0px;
+	z-index: 1000;
+	height: 55px;
+	display: flex;
+	justify-content: center;
+}
+
+#navbar {
+	width: 75%;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+}
+
+
+#navbar a:link {
+	position: relative;
+	top: 30%;
+	text-decoration: none;
+	color: black;
+}
+
+#navbar a:hover {
+	color: gold;
+}
+
+.logo {
+	position: relative;
+	top: -5px;
+}
+
+.header {
+	/* border:3px solid red; */
+	width: 100%;
+	padding-top: 5%;
+	padding-left: 15%;
+	margin: 100px 0px;
+	display: flex;
+	justify-content: row;
+}
+
+.header .header-title {
+	width: 45%;
+	padding: 50px;
+}
+
+.header .header-title h1 {
+	font-size: 75px;
+	text-align: center;
+}
+
+.header .header-title p {
+	text-align: center;
+	padding: 5px 45px;
+	border: 1px solid slategrey;
+}
+
+.header .header-title a {
+	color: black;
+}
+
+.header .header-title a:link {
+	text-decoration: none;
+}
+
+.header .header-title p:hover {
+	background-color: gold;
+}
+
+div .header-img {
+	width: 45%;
+}
+
+div .header-img img {
+	height: :300px;
+	width: 300px;
+}
+
+.border {
+	/* border:3px solid red; */
+	width: 100%;
+	height: 3px;
+	background: black;
+}
+
+#content {
+	width: 100%;
+	margin-top: 50px;
+	margin-bottom: 100px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#content .features {
+	width: 49%;
+	padding-right: 20px;
+	/* border:3px solid red; */
+}
+
+#content .about {
+	width: 49%;
+	padding-right: 20px;
+	/* border:3px solid red; */
+}
+
+#content .middle-img {
+	width: 100%;
+}
+
+div .middle-img {
+	margin: 30px 0px;
+}
+
+div .middle-img img {
+	width: 100%;
+}
+
+#content .services {
+	width: 33%;
+	padding-right: 10px;
+	/* border:3px solid red; */
+}
+
+#content .product {
+	width: 33%;
+	padding-right: 10px;
+	/* border:3px solid red; */
+}
+
+#content .vision {
+	width: 33%;
+	padding-right: 10px;
+	/* border:3px solid red; */
+}
+
+.contact {
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+footer {
+	margin-top: 100px;
+	margin-bottom: 100px;
+	display: flex;
+	align-content: flex-end;
+}
+
+/* Services Page */
+
+.services-header-img {
+	width: 100%;
+	margin-top: 30px;
+}
+
+.header-title {
+	margin: 25px 0px;
+}
+
+.header-title h1 {
+	font-size: 30px;
+}
+
+.header-title p {
+	font-size: 20px;
+}
+
+section#available-services {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+article.digital-design,
+.ux-ui,
+.digital-marketing,
+.web-development,
+.ios-development,
+.android-development {
+	width: 48%;
+	border: 1px solid black;
+	margin: 15px 0px;
+	padding: 25px;
+	background-color: lightgrey;
+}
+
+article.digital-design,
+.ux-ui,
+.digital-marketing,
+.web-development,
+.ios-development,
+.android-development,
+p {
+	margin-bottom: 25px;
+}
+
+section#bottom-half {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	margin-top: 25px;
+}
+
+article#facts {
+	width: 48%;
+}
+
+article#facts li {
+	list-style-type: square;
+	margin-bottom: 20px;
+	margin-left: 20px;
+}
+
+div.facts-img {
+	width: 48%;
+}
+
+button {
+	background: white;
+	font-size: 12px;
+	border-radius: 5px;
+	padding: 10px;
+	width: 150px;
+	border: 1px solid black;
+}
