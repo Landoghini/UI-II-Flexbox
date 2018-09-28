@@ -398,3 +398,154 @@ button {
 	width: 150px;
 	border: 1px solid black;
 }
+
+@media screen and (max-width: 380px) {
+	.container{
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width:100%;
+	}
+	header{
+	flex-direction: column-reverse;
+	justify-content: center;
+	height: 135px;
+	}
+	#navbar{
+	flex-direction: column-reverse;
+	flex-wrap: nowrap;
+	align-items: center;
+	width: 100%;
+	}
+	#navbar a:link{
+	font-size: 15px;
+	margin-bottom:5px;
+	color:slategray;
+	}
+	.logo{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	top:-15px;
+	margin-top: 20px;
+	}
+	.logo a{
+		height:25px;
+	}
+	.logo img{
+	height: 25px;
+	}
+	.header{
+	margin-top:250px;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding-left:0px;
+	}
+	.header-img{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	}
+	.border{
+	width:60%;
+	}
+	#content{
+	flex-direction: column;
+	align-items: center;
+	}
+	#content h2{
+	font-size: 30px;
+	text-align: center;
+	}
+	article p{
+	font-size: 16px;
+	}
+	#content .middle-img{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width:75%;
+	}
+	.contact h2{
+	font-size:30px;
+	}
+	/* Services Page */
+	.services-header-img{
+	margin-top:75px;
+	}
+	.header-title{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	}
+	.header-title p{
+	padding:0px 50px;
+	}
+	section#available-services{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex-wrap: nowrap;
+	}
+	article.digital-design,
+	.ux-ui,
+	.digital-marketing,
+	.web-development,
+	.ios-development,
+	.android-development {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 95%;
+	}
+	article.digital-design,
+	.ux-ui,
+	.digital-marketing,
+	.web-development,
+	.ios-development,
+	.android-development h2 {
+	font-size: 45px;
+	}
+	button {
+	font-size: 25px;
+	}
+	section#bottom-half,
+	article#facts,
+	div.facts-img{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex-wrap:nowrap;
+	}
+	article#facts{
+	width:100%;
+	}
+	article#facts h2{
+	text-align: center;
+	font-size:35px;
+	}
+	article#facts p{
+	font-size:20px;
+	padding:0px 50px
+	}
+	div.facts-img{
+	margin-top:30px;
+	width:100%;
+	}
+	.facts-img img{
+	width:95%;
+	}
+	section.contact{
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	width:100%;
+	}
+	section.contact p{
+	font-size:12px;
+	}
+	footer{
+		margin-bottom:0px;
+	}	  
+}
